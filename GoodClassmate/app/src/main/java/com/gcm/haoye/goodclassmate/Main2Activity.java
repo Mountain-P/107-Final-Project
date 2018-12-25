@@ -27,7 +27,7 @@ public class Main2Activity extends Activity {
     private boolean dateClick,timeClick;
     private Context context;
     private CommentsDataSource database;
-
+    //kjkjkjkj
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
