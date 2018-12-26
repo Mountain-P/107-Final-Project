@@ -29,5 +29,5 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_weight="1"
-        android:text="OK" />
+        android:text="刪除此筆" />
 </LinearLayout>
