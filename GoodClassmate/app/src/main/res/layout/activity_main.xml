@@ -47,7 +47,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center"
-            android:text="           ID        消費名稱        消費金額             刪除"
+            android:text="日期                   支出項目         支出金額            刪除"
             android:textAlignment="viewStart"
             android:textSize="18sp" />
 

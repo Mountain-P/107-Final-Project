@@ -7,8 +7,14 @@ import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.Button;
 import android.widget.TextView;
+import android.widget.Toast;
 
 
+import java.text.DateFormat;
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+import java.util.Calendar;
+import java.util.Date;
 import java.util.List;
 
 /**
@@ -16,6 +22,7 @@ import java.util.List;
  */
 
 public class MyAdapter extends BaseAdapter {
+    //private int  saveYear, saveMonth, saveDay, saveHour, saveMinute;
     Context context;
     public List<Comment> list;
     private CommentsDataSource datasource;
@@ -43,6 +50,7 @@ public class MyAdapter extends BaseAdapter {
     @Override
     public View getView(int position, View convertView, ViewGroup parent) {
         ViewHolder holder;
+
         if(convertView == null) {
             holder = new ViewHolder();
             convertView= LayoutInflater.from(context).inflate(R.layout.test,parent,false);
@@ -59,7 +67,19 @@ public class MyAdapter extends BaseAdapter {
             holder = (ViewHolder) convertView.getTag();
         }
         final Comment comment = list.get(position);
-        holder.view_id.setText(comment.getList_id() + "");
+        //DateFormat.getDateInstance(DateFormat.SHORT).format(comment.getDatestart());
+        SimpleDateFormat sdf = new SimpleDateFormat("yyyy/MM/dd HH:mm:ss");
+        long l = Long.parseLong(comment.getDatestart());
+        //String formattedDate = sdf.format(l);
+
+
+        Calendar calendar = Calendar.getInstance();
+        calendar.setTimeInMillis(l);
+        calendar.add(Calendar.MONTH, 1);
+        Date tdt=calendar.getTime();
+        String time=sdf.format(tdt);
+
+        holder.view_id.setText( time+ "");
         holder.view_money.setText(comment.getMoney() + "");
         holder.view_name.setText(comment.getName());
         holder.view_deletebutton
