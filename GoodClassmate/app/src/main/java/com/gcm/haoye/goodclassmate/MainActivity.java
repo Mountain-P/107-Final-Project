@@ -136,7 +136,7 @@ public class MainActivity extends ListActivity {
                             runOnUiThread(new Runnable() {
                                 @Override
                                 public void run() {
-                                    Toast.makeText(context,"有筆金額還款時間已到",Toast.LENGTH_LONG).show();
+                                    //Toast.makeText(context,"有筆金額還款時間已到",Toast.LENGTH_LONG).show();
                                 }
                             });
                         };

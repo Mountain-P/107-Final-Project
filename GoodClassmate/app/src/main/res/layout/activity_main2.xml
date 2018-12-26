@@ -9,23 +9,25 @@
 
     <LinearLayout
         android:id="@+id/root"
-        android:orientation="vertical"
         android:layout_width="fill_parent"
-        android:layout_height="fill_parent" >
+        android:layout_height="fill_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:orientation="vertical">
 
         <TextView
-            android:layout_weight="1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="新增記錄"
+            android:layout_weight="1"
             android:gravity="center"
-            android:textSize="40dp"/>
+            android:text="新增記錄"
+            android:textSize="40dp" />
 
         <LinearLayout
-            android:layout_weight="1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal" >
+            android:layout_weight="1"
+            android:orientation="horizontal">
 
             <TextView
                 android:layout_width="match_parent"
@@ -39,26 +41,28 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:ems="10"
-                android:text="日期"
                 android:clickable="true"
-                android:gravity="center" />
+                android:ems="10"
+                android:gravity="center"
+                android:text="日期" />
+
             <TextView
                 android:id="@+id/startTime_TextView"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:text="時間"
-                android:ems="10"
                 android:clickable="true"
-                android:gravity="center" />
+                android:ems="10"
+                android:gravity="center"
+                android:text="時間" />
 
         </LinearLayout>
+
         <LinearLayout
-            android:layout_weight="1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal" >
+            android:layout_weight="1"
+            android:orientation="horizontal">
 
             <TextView
                 android:layout_width="match_parent"
@@ -73,43 +77,20 @@
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:ems="10"
-                android:inputType="number"
-                android:maxLength="5"
                 android:gravity="center"
-                android:hint="$$$" />
-
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_weight="1"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal" >
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:text="還款時限"
-                android:layout_weight="1"
-                android:gravity="center" />
-
-            <EditText
-                android:id="@+id/dataend_EditText"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:ems="10"
-                android:gravity="center"
-                android:hint="Day"
+                android:hint="$$$"
                 android:inputType="number"
                 android:maxLength="5" />
 
         </LinearLayout>
+
+
+
         <LinearLayout
-            android:layout_weight="1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal" >
+            android:layout_weight="1"
+            android:orientation="horizontal">
 
             <TextView
                 android:layout_width="match_parent"
@@ -124,25 +105,54 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:ems="10"
-                android:maxLength="5"
-                android:inputType="text"
                 android:gravity="center"
-                android:hint="Name" />
+                android:hint="Name"
+                android:inputType="text"
+                android:maxLength="5" />
 
         </LinearLayout>
-
         <LinearLayout
-            android:layout_weight="1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal" >
+            android:layout_weight="1"
+            android:orientation="horizontal">
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:text="還款預警"
                 android:layout_weight="1"
-                android:gravity="center"/>
+                android:gravity="center"
+                android:text="還款時限"
+                android:visibility="invisible" />
+
+            <EditText
+                android:id="@+id/dataend_EditText"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:ems="10"
+                android:gravity="center"
+                android:hint="Day"
+                android:inputType="number"
+                android:maxLength="5"
+                android:text="1000"
+                android:visibility="invisible" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="還款預警"
+                android:visibility="invisible" />
 
             <EditText
                 android:id="@+id/warning_EditText"
@@ -153,7 +163,9 @@
                 android:gravity="center"
                 android:hint="Day"
                 android:inputType="number"
-                android:maxLength="5" />
+                android:maxLength="5"
+                android:text="500"
+                android:visibility="invisible" />
         </LinearLayout>
 
         <Button

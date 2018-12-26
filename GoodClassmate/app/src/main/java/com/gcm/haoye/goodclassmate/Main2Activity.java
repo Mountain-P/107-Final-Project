@@ -57,9 +57,9 @@ public class Main2Activity extends Activity {
             if (startDateStr.isEmpty() ||
                     startTimeStr.isEmpty() ||
                     nameStr.isEmpty() ||
-                    moneyStr.isEmpty() ||
-                    dataEndStr.isEmpty() ||
-                    warningStr.isEmpty()
+                    moneyStr.isEmpty()
+                    //dataEndStr.isEmpty() ||
+                    //warningStr.isEmpty()
                     ){
                 Toast.makeText(context, "資料未齊全", Toast.LENGTH_SHORT).show();
                 return;
