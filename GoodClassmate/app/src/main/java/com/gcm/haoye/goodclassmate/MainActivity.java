@@ -23,6 +23,9 @@ import java.util.List;
 import java.util.Random;
 
 
+
+
+
 public class MainActivity extends ListActivity {
     public static final int REQUESTCODE = 123;
     private static final String BUNDLEID = "commit";
@@ -30,6 +33,7 @@ public class MainActivity extends ListActivity {
     private Context context;
     private CommentsDataSource datasource;
     private MyAdapter adapter;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
