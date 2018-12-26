@@ -15,7 +15,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center"
-            android:text="Where Is My Money?"
+            android:text="帳目支出"
+            android:textColor="@color/white"
             android:textSize="30dp" />
 
         <LinearLayout
