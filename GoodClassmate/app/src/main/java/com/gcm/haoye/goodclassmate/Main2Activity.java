@@ -27,7 +27,7 @@ public class Main2Activity extends Activity {
     private boolean dateClick,timeClick;
     private Context context;
     private CommentsDataSource database;
-    //kjkjkjkj
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -105,13 +105,13 @@ public class Main2Activity extends Activity {
                 Calendar c = Calendar.getInstance();
                 int mYear, mMonth, mDay;
                 mYear = c.get(Calendar.YEAR);
-                mMonth = c.get(Calendar.MONTH);
+                mMonth = c.get(Calendar.MONTH) ;
                 mDay = c.get(Calendar.DAY_OF_MONTH);
                 new DatePickerDialog(
                         Main2Activity.this, new DatePickerDialog.OnDateSetListener() {
                     @Override
                     public void onDateSet(DatePicker view, int year, int month, int day) {
-                        startDate.setText(year + " 年 "+ month + " 月 " + day + " 日 ");
+                        startDate.setText(year + " 年 "+ (month+1) + " 月 " + day + " 日 ");
                         saveYear = year;
                         saveMonth = month;
                         saveDay = day;

@@ -46,9 +46,9 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center"
-            android:text="消費事件"
+            android:text="           ID        消費名稱        消費金額             刪除"
             android:textAlignment="viewStart"
-            android:textSize="30dp" />
+            android:textSize="18sp" />
 
         <ListView
             android:id="@android:id/list"

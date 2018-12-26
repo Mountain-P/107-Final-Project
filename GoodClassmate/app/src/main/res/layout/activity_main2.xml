@@ -158,11 +158,11 @@
 
         <Button
             android:id="@+id/submitbtn"
-            android:layout_weight="1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textSize="20dp"
-            android:text="Submit" />
+            android:layout_weight="1"
+            android:text="新增"
+            android:textSize="20dp" />
 
     </LinearLayout>
 </RelativeLayout>
