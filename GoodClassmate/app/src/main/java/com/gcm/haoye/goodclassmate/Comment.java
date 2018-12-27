@@ -48,6 +48,16 @@ public class Comment {
         this.name = name;
     }
 
+    public String getDatestart() {
+        return datestart;
+    }
+
+    public void setDatestart(String datestart) {
+        this.datestart = datestart;
+    }
+
+
+
     public String getDataend() {
         return dataend;
     }
@@ -56,13 +66,7 @@ public class Comment {
         this.dataend = dataend;
     }
 
-    public String getDatestart() {
-        return datestart;
-    }
 
-    public void setDatestart(String datestart) {
-        this.datestart = datestart;
-    }
 
     public String getWedt() {
         return wedt;

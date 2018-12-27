@@ -14,8 +14,8 @@ public class MySQLiteHelper extends SQLiteOpenHelper {
     public static final String COLUMN_LIST_ID = "list_id";
     public static final String COLUMN_MONEY = "money";
     public static final String COLUMN_NAME = "name";
-    public static final String COLUMN_DATAEND = "dataend";
     public static final String COLUMN_DATASTART = "datastart";
+    public static final String COLUMN_DATAEND = "dataend";
     public static final String COLUMN_WEDT = "wedt";
 
     private static final String DATABASE_NAME = "commments.db";
